@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        //Caixa de alerta
+        /* comentário com mais de uma linha*/
+        /*alert('Alô galera de cowboy!');
+        alert('Respeite a sua mãe e não use drogas');*/
+        alert('Isso é realmente necessário?');
+        alert('Eu sou um diabo necessário');
+
+        document.write('Olá mundo!')//escreve no documento
+        document.write('<h1>Oioioioi</h1>') //para colocar parágrafos ou editar o tamanho da letra é só usar as tags h1, h2, p
+        document.write(3*3); // o JavaScript já calcula a operação direto
+    </script>
+    <p id="elemento"></p>
+    <script>
+        //onclick significa "ao clicar"
+        //document.getElementById('elemento').innerHTML = 5+7-3;
+        const MeuP = document.getElementById('elemento');
+        var ano = 2023;
+        var nome = 'Tayná';
+        var profissao = 'Desempregada';
+        MeuP.innerHTML = 'Eu sou '+nome+' minha situação empregatícia em '+ano+' é '+profissao
+        
+        var nome2 = prompt('Qual é o seu nome: ');
+        document.write('Bem-vind@, '+nome2)
+    </script>
+    <form action="" name="formulario">
+        <input type="radio" name="habilita" id="sim" value="sim"onclick="HabilitarCampo(1)">Habilitar 
+        <input type="radio" name="habilita" id="nao" value="nao" checked onclick="HabilitarCampo(0)">Desabilitar
+        <br>
+        <label>Campo</label>
+        <input type="text" name="campo" id="campo" disabled>
+    </form>
+    <script>
+        function HabilitarCampo(opcao){
+            if(opcao){
+                document.formulario.campo.disabled = false;
+            }
+            else{
+                document.formulario.campo.value = '';
+                document.formulario.campo.disabled = true;
+            }
+        }
+    </script>
+    
+</body>
+</html>
