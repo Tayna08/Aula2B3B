@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Formulário Boostrap</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Cálculo IMC</a>
+              </div>
+          </nav>
+    </header>
+    <main class="container mt-3">
+     <form action="">
+        <div class="row g-3">
+            <div class="col">
+                <label for="Peso" class="form-label">Peso</label>
+              <input type="text" class="form-control" placeholder="Peso" aria-label="Peso" name="peso" id="peso">
+            </div>
+            <div class="col">
+                <label for="Altura" class="form-label">Altura</label>
+              <input type="text" class="form-control" placeholder="Altura (em metros)" aria-label="Altura" name="altura" id="altura">
+            </div>
+            <div class="col">
+                <label class="form-label">Resultado</label>
+                <input type="text" name="resultado" id="resultado" class="form-control">
+            </div>
+          </div>
+          <button type="button" class="btn btn-outline-danger" id="btnSomar">Calcular</button>
+     </form>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/calculo.js"></script>
+</body>
+</html>
